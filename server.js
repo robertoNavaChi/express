@@ -24,7 +24,7 @@ var port    = 	process.env.PORT || 3000;			// set our port
 
 mongoose.connect('mongodb://localhost/media'); 		// connect to our database
 
-var Bear     = require('./app/models/bear');
+var Bear     = require('./backend/models/bear');
 
 // ROUTES
 // ==========================================================================================================
