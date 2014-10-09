@@ -20,6 +20,8 @@ app.use(logErrors);
 app.use(clientErrorHandler);
 app.use(errorHandler);
 
+app.use(express.static(__dirname + '/frontend'));
+
 var port    = 	process.env.PORT || 3000;			// set our port
 
 mongoose.connect('mongodb://localhost/media'); 		// connect to our database
@@ -44,7 +46,7 @@ router.use(function(req, res, next) {
 // index 
 router.get('/', function(req, res){
 	
-	res.json({ message: 'Welcome!' });
+	//res.json({ message: 'Welcome!' });
 
 });
 
