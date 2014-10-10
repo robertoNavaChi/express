@@ -54,7 +54,7 @@ define([
 
         goToFirstPage: function() {
 
-            app.navigate('dashboard', {trigger: true});
+            app.navigate('login', {trigger: true});
 
         }
 

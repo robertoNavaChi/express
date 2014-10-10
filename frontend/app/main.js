@@ -6,6 +6,7 @@ require.config({
         underscore: '../libs/underscore/underscore',
         backbone: '../libs/backbone/backbone',
         handlebars: '../libs/handlebars/handlebars',
+        text: '../libs/require/text',
 
         // Used for internationalization
         i18n: '../libs/i18next/i18next.amd.withJQuery-1.6.3',
@@ -16,10 +17,10 @@ require.config({
 
         // MOG web app
         appUtils: 'modules/common/appUtils',
-        generalSettings: 'modules/common/generalSettings/generalSettingsModel'
+        generalSettings: 'modules/common/generalSettings/generalSettingsModel',
 
         // VIEWS
-        loginPage:'modules/login/views/loginPage',
+        loginPage:'modules/login/views/loginPage'
 
     },
     shim: {
@@ -35,6 +36,10 @@ require.config({
         },
         'handlebars': {
             exports: 'Handlebars'
+        },
+        'amplify': {
+            deps: ['jquery'],
+            exports: 'amplify'
         }
     }
 });

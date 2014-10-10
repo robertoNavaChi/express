@@ -18,7 +18,7 @@ define(['require', 'backbone', 'underscore', 'jquery', 'amplify', 'i18n', 'appUt
 
             initialize: function() {
 
-                // Read and set REST api URL
+                /*// Read and set REST api URL
                 if(window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
                     xmlhttp = new XMLHttpRequest();
                 }else{// code for IE6, IE5
@@ -36,7 +36,7 @@ define(['require', 'backbone', 'underscore', 'jquery', 'amplify', 'i18n', 'appUt
                     this.set({ restApiUrl: xmlhttp.responseText });
                 }
 
-                this.tryToRestorePreviousLoggedInSession();
+                this.tryToRestorePreviousLoggedInSession();*/
 
             },
 

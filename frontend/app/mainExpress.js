@@ -5,8 +5,8 @@ require(['main'], function (main) {
         if (typeof console === "undefined"){
             console={};
             console.log = function(){
-				return;
-			};
+                return;
+            };
         }
         window.AppUtils.vent = _.extend({}, Backbone.Events);
         App.initialize();
